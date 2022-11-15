@@ -2,6 +2,7 @@ const router = require("express").Router()
 const bcrypt = require('bcryptjs')
 const User = require("../models/User.model")
 const saltRounds = 10
+const { isLoggedOut } = require('../middleware/roles.middleware')
 
 // Signup
 router.get('/registro', (req, res, next) => res.render('auth/signup'))

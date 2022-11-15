@@ -1,0 +1,11 @@
+<h1>List</h1>
+
+{{#each students}}
+  <p>{{name}}</p>
+  <p>{{email}}</p>
+  
+  <a href="/celebrities/detail/{{_id}}">Show detail</a>
+  <a href="/celebrities/delete/{{_id}}">Delete</a>
+  <a href="/celebrities/edit/{{_id}}">Edit</a>
+  <p>-----</p>
+{{/each}}
